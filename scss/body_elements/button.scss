@@ -1,0 +1,20 @@
+button,
+button:hover,
+button:active,
+button:focus,
+button:visited,
+ {
+  outline: none;
+}
+
+a {
+    text-decoration: underline;
+    color: $dark;
+    outline: none;
+}
+a:hover,
+a:active,
+a:focus,
+a:visited {
+    outline: none;
+}

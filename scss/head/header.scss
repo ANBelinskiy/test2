@@ -1,0 +1,65 @@
+header {
+    background: $bg-light;
+    .wrapper {
+        display: flex;
+    }
+    img {
+        @extend %w-h-100;
+        max-width: 273px;
+        max-height: 100px;
+    }
+}
+.show-contacts {
+    display: none;
+    height: 90px;
+    img {
+        max-width: 65px;
+        max-height: 65px;
+        @extend %w-h-100;
+    }
+}
+
+.header-logo {
+    padding: 65px 0 65px 0;
+    float: left;
+    max-width: 273px;
+    max-height: 230px;
+    height: 100%;
+    width: 100%;
+}
+
+.header-contacts {
+    float: right;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 46px 0 71px 0;
+
+    a:not(:last-child) {
+        font-family: "Open Sans Condensed";
+        font-size: 40px;
+        display: block;
+        max-height: 40px;
+        height: 100%;
+        font-weight: 300;
+        line-height: 46px;
+        letter-spacing: 1px;
+        height: 100%;
+        text-decoration: none;
+        color: $dark;
+    }
+    
+    a:last-child {
+        font-size: 24px;
+        color: $dark;
+        font-weight: 700;
+        line-height: 46px;
+        display: block;
+        max-height: 22px;
+        height: 100%;
+        letter-spacing: 0.6px;
+        text-decoration-style: dashed;
+    }
+    
+}

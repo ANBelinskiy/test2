@@ -1,0 +1,72 @@
+footer {
+    background: $bg-dark;
+    width: 100%;
+    color: $white;
+    padding: 44px 0 46px 0;
+    .wrapper {
+        display: flex;
+        .container-fluid {
+            .row {
+                margin: 0;
+                div:first-child {
+                    padding: 0;
+                    p {
+                        margin: 0;
+                    }
+                    a {
+                        color: $white;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                div:last-child {
+                    padding: 0;
+                    display: flex;
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        padding-right: 25px;
+                        p {
+                            margin: 0;
+                        }
+                        div {
+                            display: block;
+                        }
+                        a {
+                            color: $white;
+                            text-decoration: underline;
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }  
+                }
+            } 
+        } 
+    }
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        a {
+            display: block;
+            color: $white;
+            line-height: 26px;
+            text-decoration: underline;
+            letter-spacing: 0.35px;
+            &:hover {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.logo-company {
+    width: 36px;
+    height: 38px;
+    margin: 5px 9px 0 auto;
+    @extend %w-h-100;
+}
